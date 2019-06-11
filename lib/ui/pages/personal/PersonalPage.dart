@@ -1,5 +1,5 @@
-import 'package:first_flutter/resource/MyColors.dart';
 import 'package:first_flutter/ui/AppNavigator.dart';
+import 'package:first_flutter/ui/res/AppColors.dart';
 import 'package:flutter/material.dart';
 
 class Personal extends StatelessWidget {
@@ -31,10 +31,10 @@ class Personal extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             "用户账号:",
-                            style: TextStyle(color: MyColors.colorWhite),
+                            style: TextStyle(color: AppColors.colorWhite),
                           ),
                           Text("烟花一冷",
-                              style: TextStyle(color: MyColors.colorWhite)),
+                              style: TextStyle(color: AppColors.colorWhite)),
                         ],
                         mainAxisAlignment: MainAxisAlignment.center,
                       )
@@ -101,7 +101,7 @@ class Personal extends StatelessWidget {
               ],
             ),
             padding: EdgeInsets.fromLTRB(15, 15, 15, 0),
-            color: MyColors.colorWhite,
+            color: AppColors.colorWhite,
           ),
           onTap: () {},
         ),

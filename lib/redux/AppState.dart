@@ -17,8 +17,7 @@ class AppState {
 class AppReducer {
   static const String TAG = "AppReducer";
 
-  static Store<AppState> store =
-      Store(AppReducer.reducer, initialState: AppState.createInitialState());
+  static Store<AppState> store = Store(AppReducer.reducer, initialState: AppState.createInitialState());
 
   static List<BaseReducer> reducers = [];
 

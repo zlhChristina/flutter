@@ -1,6 +1,6 @@
 import 'package:first_flutter/model/ArticleListResp.dart';
-import 'package:first_flutter/resource/MyColors.dart';
 import 'package:first_flutter/ui/AppNavigator.dart';
+import 'package:first_flutter/ui/res/AppColors.dart';
 import 'package:flutter/material.dart';
 
 class ArticleItem extends StatefulWidget {
@@ -90,7 +90,7 @@ class ArticleView extends State<ArticleItem> {
       ),
       elevation: 4.0,
       margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
-      color: MyColors.colorWhite,
+      color: AppColors.colorWhite,
     );
   }
 }

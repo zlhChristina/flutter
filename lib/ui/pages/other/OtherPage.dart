@@ -1,6 +1,6 @@
 import 'package:first_flutter/constant/Constant.dart';
 import 'package:first_flutter/model/BannerResp.dart';
-import 'package:first_flutter/resource/MyString.dart';
+import 'package:first_flutter/ui/res/AppString.dart';
 import 'package:first_flutter/ui/widget/BannerView.dart';
 import 'package:first_flutter/util/HttpUtil.dart';
 import 'package:flutter/material.dart';
@@ -21,12 +21,12 @@ class OtherState extends State<Other> {
   void initState() {
     super.initState();
     getBanner();
-    nameList.add(MyString.wanAndroid);
-    nameList.add(MyString.github);
-    nameList.add(MyString.zhy);
-    nameList.add(MyString.app);
-    nameList.add(MyString.video);
-    nameList.add(MyString.updateTitle);
+    nameList.add(AppString.wanAndroid);
+    nameList.add(AppString.github);
+    nameList.add(AppString.zhy);
+    nameList.add(AppString.app);
+    nameList.add(AppString.video);
+    nameList.add(AppString.updateTitle);
     iconList.add(Icons.layers);
     iconList.add(Icons.ac_unit);
     iconList.add(Icons.tv);
@@ -70,7 +70,7 @@ class OtherState extends State<Other> {
             childAspectRatio: 13 / 6,
           ),
           height: 160,
-          margin:EdgeInsets.only(top: 10) ,
+          margin: EdgeInsets.only(top: 10),
         ),
       ],
     );

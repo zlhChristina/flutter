@@ -1,7 +1,7 @@
 import 'package:first_flutter/constant/Constant.dart';
 import 'package:first_flutter/model/CategoryResp.dart';
-import 'package:first_flutter/resource/MyColors.dart';
 import 'package:first_flutter/ui/AppNavigator.dart';
+import 'package:first_flutter/ui/res/AppColors.dart';
 import 'package:first_flutter/util/HttpUtil.dart';
 import 'package:flutter/material.dart';
 
@@ -66,7 +66,7 @@ class CategoryState extends State<Category> {
               ),
             ),
             Text("${categoryData[index].children.length}分类"),
-            Icon(Icons.arrow_forward, color: MyColors.colorPrimary),
+            Icon(Icons.arrow_forward, color: AppColors.colorPrimary),
           ],
         ),
         padding: EdgeInsets.all(15),
