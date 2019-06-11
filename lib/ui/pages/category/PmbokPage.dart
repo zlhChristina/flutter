@@ -1,6 +1,6 @@
 import 'package:first_flutter/model/ArticleListResp.dart';
 import 'package:first_flutter/model/CategoryResp.dart';
-import 'package:first_flutter/ui/category/PmbokListPage.dart';
+import 'package:first_flutter/ui/pages/category/PmbokListPage.dart';
 import 'package:flutter/material.dart';
 
 class PmboxPage extends StatefulWidget {

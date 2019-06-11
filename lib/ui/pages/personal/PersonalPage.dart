@@ -1,5 +1,5 @@
 import 'package:first_flutter/resource/MyColors.dart';
-import 'package:first_flutter/ui/login/LoginPage.dart';
+import 'package:first_flutter/ui/AppNavigator.dart';
 import 'package:flutter/material.dart';
 
 class Personal extends StatelessWidget {
@@ -45,16 +45,18 @@ class Personal extends StatelessWidget {
                 ),
               ],
             ),
-            onTap: (){
-              Navigator.of(context).push(new MaterialPageRoute(builder: (context) {
-                return new LoginPage();
-              }));
+            onTap: () {
+              AppNavigator.toLoginPage(context);
             },
           ),
         ),
         personalItem("我的收藏", 'images/ic_store_collect.png', true, context),
         personalItem("设置", "images/ic_setting.png", true, context),
         personalItem("退出登录", "images/ic_logout.png", false, context),
+        Image.asset(
+          'images/ic_refresh_gif.gif',
+          height: 60,
+        )
       ],
     );
   }
@@ -105,7 +107,7 @@ class Personal extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(15, 15, 15, 0),
             color: MyColors.colorWhite,
           ),
-          onTap: () { },
+          onTap: () {},
         ),
       ),
     );

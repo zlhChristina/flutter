@@ -1,9 +1,8 @@
 import 'package:first_flutter/resource/MyColors.dart';
-import 'package:first_flutter/ui/category/CategoryPage.dart';
-import 'package:first_flutter/ui/home/HomePage.dart';
-import 'package:first_flutter/ui/other/OtherPage.dart';
-import 'package:first_flutter/ui/personal/PersonalPage.dart';
-import 'package:first_flutter/util/LogUtil.dart';
+import 'package:first_flutter/ui/pages/category/CategoryPage.dart';
+import 'package:first_flutter/ui/pages/home/HomePage.dart';
+import 'package:first_flutter/ui/pages/other/OtherPage.dart';
+import 'package:first_flutter/ui/pages/personal/PersonalPage.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

@@ -1,7 +1,7 @@
 import 'package:first_flutter/constant/Constant.dart';
 import 'package:first_flutter/model/CategoryResp.dart';
 import 'package:first_flutter/resource/MyColors.dart';
-import 'package:first_flutter/ui/category/PmbokPage.dart';
+import 'package:first_flutter/ui/AppNavigator.dart';
 import 'package:first_flutter/util/HttpUtil.dart';
 import 'package:flutter/material.dart';
 
@@ -41,10 +41,7 @@ class CategoryState extends State<Category> {
           return Container(
             child: categoryData.isEmpty ? Container() : getItem(index),
             height: 80,
-            width: MediaQuery
-                .of(context)
-                .size
-                .width,
+            width: MediaQuery.of(context).size.width,
           );
         },
         itemCount: categoryData.length,
@@ -81,9 +78,7 @@ class CategoryState extends State<Category> {
         ),
       ),
       onTap: () {
-        Navigator.of(context).push(new MaterialPageRoute(builder: (context) {
-          return new PmboxPage(categoryData[index]);
-        }));
+        AppNavigator.toPmboxPage(context, categoryData[index]);
       },
     );
   }

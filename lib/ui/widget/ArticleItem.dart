@@ -1,6 +1,6 @@
 import 'package:first_flutter/model/ArticleListResp.dart';
 import 'package:first_flutter/resource/MyColors.dart';
-import 'package:first_flutter/ui/detail/ArticleDetailPage.dart';
+import 'package:first_flutter/ui/AppNavigator.dart';
 import 'package:flutter/material.dart';
 
 class ArticleItem extends StatefulWidget {
@@ -85,10 +85,7 @@ class ArticleView extends State<ArticleItem> {
           padding: EdgeInsets.all(20),
         ),
         onTap: () {
-          Navigator.of(context).push(new MaterialPageRoute(builder: (context) {
-            return new ArticleDetailPage(
-                title: widget.itemData.title, url: widget.itemData.link);
-          }));
+          AppNavigator.toArticleDetailPage(context);
         },
       ),
       elevation: 4.0,

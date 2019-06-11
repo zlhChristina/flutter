@@ -1,10 +1,10 @@
+import 'package:first_flutter/constant/Constant.dart';
 import 'package:first_flutter/model/ArticleListResp.dart';
 import 'package:first_flutter/model/BannerResp.dart';
 import 'package:first_flutter/ui/widget/ArticleItem.dart';
 import 'package:first_flutter/util/HttpUtil.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import 'package:first_flutter/constant/Constant.dart';
 
 class Home extends StatefulWidget {
   @override
