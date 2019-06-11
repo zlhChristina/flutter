@@ -53,10 +53,6 @@ class Personal extends StatelessWidget {
         personalItem("我的收藏", 'images/ic_store_collect.png', true, context),
         personalItem("设置", "images/ic_setting.png", true, context),
         personalItem("退出登录", "images/ic_logout.png", false, context),
-        Image.asset(
-          'images/ic_refresh_gif.gif',
-          height: 60,
-        )
       ],
     );
   }
