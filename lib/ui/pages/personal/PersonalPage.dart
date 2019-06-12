@@ -1,5 +1,6 @@
 import 'package:first_flutter/ui/AppNavigator.dart';
 import 'package:first_flutter/ui/res/AppColors.dart';
+import 'package:first_flutter/ui/res/AppImages.dart';
 import 'package:flutter/material.dart';
 
 class Personal extends StatelessWidget {
@@ -13,14 +14,14 @@ class Personal extends StatelessWidget {
             child: Stack(
               children: <Widget>[
                 Image.asset(
-                  'images/ic_personal_background.png',
+                  AppImages.ic_personal_background,
                   height: 220,
                 ),
                 Container(
                   child: Row(
                     children: <Widget>[
                       Image.asset(
-                        'images/ic_head.png',
+                        AppImages.ic_head,
                         height: 80,
                         width: 80,
                       ),
@@ -33,8 +34,7 @@ class Personal extends StatelessWidget {
                             "用户账号:",
                             style: TextStyle(color: AppColors.colorWhite),
                           ),
-                          Text("烟花一冷",
-                              style: TextStyle(color: AppColors.colorWhite)),
+                          Text("烟花一冷", style: TextStyle(color: AppColors.colorWhite)),
                         ],
                         mainAxisAlignment: MainAxisAlignment.center,
                       )
@@ -50,9 +50,9 @@ class Personal extends StatelessWidget {
             },
           ),
         ),
-        personalItem("我的收藏", 'images/ic_store_collect.png', true, context),
-        personalItem("设置", "images/ic_setting.png", true, context),
-        personalItem("退出登录", "images/ic_logout.png", false, context),
+        personalItem("我的收藏", AppImages.ic_store_collect, true, context),
+        personalItem("设置", AppImages.ic_setting, true, context),
+        personalItem("退出登录", AppImages.ic_logout, false, context),
       ],
     );
   }
@@ -91,7 +91,7 @@ class Personal extends StatelessWidget {
                       ),
                     ),
                     Image.asset(
-                      "images/ic_rightArrow.png",
+                      AppImages.ic_rightArrow,
                       width: 12,
                       height: 24,
                     ),

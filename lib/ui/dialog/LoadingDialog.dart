@@ -14,9 +14,7 @@ class LoadingDialog extends Dialog {
           child: new Container(
             width: 250,
             height: 80,
-            decoration: BoxDecoration(
-                color: AppColors.toast_bg,
-                borderRadius: BorderRadius.all(Radius.circular(10))),
+            decoration: BoxDecoration(color: AppColors.toast_bg, borderRadius: BorderRadius.all(Radius.circular(10))),
             child: new Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
